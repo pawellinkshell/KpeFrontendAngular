@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {AsyncPipe, CommonModule, SlicePipe} from "@angular/common";
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
 import {PostsService} from "./posts.service";
 
 @Component({
@@ -19,5 +19,11 @@ export class PostsComponent {
 
   constructor(private postService: PostsService) {
     this.posts$ = postService.getPosts();
+  }
+
+  removePost(postId: number): void {
+    this.posts$ = this.posts$.pipe(
+      map(posts => posts.filter(post => post.id !== postId))
+    );
   }
 }

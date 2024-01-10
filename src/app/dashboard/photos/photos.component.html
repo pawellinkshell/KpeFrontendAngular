@@ -2,5 +2,6 @@
   <div *ngFor="let photo of (photos$ | async) | slice:0:10" class="photo">
     <img [src]="photo.thumbnailUrl" [alt]="photo.title">
     <p>{{ photo.title }}</p>
+    <button (click)="removePost(photo.id)">Remove</button>
   </div>
 </div>

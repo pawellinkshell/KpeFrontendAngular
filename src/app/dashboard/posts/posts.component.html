@@ -3,5 +3,6 @@
     <h2>User id: {{ post.userId }}</h2>
     <h3>ID: {{ post.id }} title: {{ post.title }}</h3>
     <p>{{ post.body }}</p>
+    <button (click)="removePost(post.id)">Remove</button>
   </li>
 </ul>
