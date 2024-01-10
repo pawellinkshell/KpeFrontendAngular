@@ -1,1 +1,8 @@
-<p>removed-items works!</p>
+<div>
+  <h3>Removed items</h3>
+  <ul>
+    <li *ngFor="let item of removedItems$ | async">
+      {{ item.title || item.name }} <!-- Użyj odpowiednich właściwości obiektu -->
+    </li>
+  </ul>
+</div>
