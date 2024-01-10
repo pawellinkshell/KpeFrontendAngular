@@ -18,4 +18,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 })
 export class AppComponent {
   title = 'KpeFrontendAngular';
+  products: string = 'products';
+  dashboard: string = 'dashboard';
+  isCollapsed: boolean = true;
 }
