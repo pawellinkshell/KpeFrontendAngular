@@ -1,0 +1,13 @@
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo {
+  margin: 10px;
+  text-align: center;
+}
+.photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

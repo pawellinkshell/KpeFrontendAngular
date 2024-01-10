@@ -1,1 +1,7 @@
-<p>posts works!</p>
+<ul>
+  <li *ngFor="let post of (posts$ | async) | slice:0:10">
+    <h2>User id: {{ post.userId }}</h2>
+    <h3>ID: {{ post.id }} title: {{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+  </li>
+</ul>
