@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="view-toggle">
+    <button (click)="isListView = true">List</button>
+    <button (click)="isListView = false"></button>
+  </div>
+
+  <!-- Lista Produktów -->
+<!--  <div *ngIf="isListView; else gridTemplate">-->
+    <ul class="post-list">
+      <li *ngFor="let photo of (photos$ | async) | slice:0:10">
+        <img [src]="photo.thumbnailUrl" alt="Miniatura photoów">
+        <h3>{{ photo.title }}</h3>
+        <p>Id: {{ photo.albumId }}</p>
+        <p>Album Id: {{ photo.id }}</p>
+        <a [href]="photo.url">Więcej informacji</a>
+        <!-- Przycisk Dodaj do Ulubionych -->
+        <button (click)="addToFavorites(photo)">Dodaj do Ulubionych</button>
+      </li>
+    </ul>
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Siatka Produktów &ndash;&gt;-->
+<!--  <ng-template #gridTemplate>-->
+<!--    <div class="photo-grid">-->
+<!--      <div class="photo-item" *ngFor="let photo of photos$ | async">-->
+<!--        <img [src]="photo.thumbnail" alt="Miniatura photoów">-->
+<!--        <h3>{{ photo.name }}</h3>-->
+<!--        <p>Cena: {{ photo.price }}</p>-->
+<!--        <a [href]="photo.url">Więcej informacji</a>-->
+<!--        &lt;!&ndash; Przycisk Dodaj do Ulubionych &ndash;&gt;-->
+<!--        <button (click)="addToFavorites(photo)">Dodaj do Ulubionych</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+</div>

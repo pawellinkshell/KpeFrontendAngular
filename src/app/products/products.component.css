@@ -1,0 +1,26 @@
+.container {
+  padding: 20px;
+}
+
+.post-list, .post-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-list li, .post-item {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.post-item {
+  width: calc(33.333% - 20px); /* Dla trzech kolumn */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.view-toggle button {
+  margin-right: 10px;
+}
