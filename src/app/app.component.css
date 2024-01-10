@@ -15,3 +15,38 @@
 .navbar-custom .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+/* Stylowanie ikon mediów społecznościowych */
+.social-icon {
+  color: #333; /* Bazowy kolor ikon */
+  transition: color 0.3s; /* Animacja zmiany koloru */
+}
+
+/* Kolory przy najechaniu kursorem na ikony */
+.social-icon:hover {
+  color: #007bff; /* Przykładowy kolor dla efektu hover */
+}
+
+/* Facebook */
+.social-icon.facebook:hover {
+  color: #3b5998; /* Kolor Facebooka */
+}
+
+/* LinkedIn */
+.social-icon.linkedin:hover {
+  color: #0077b5; /* Kolor LinkedIn */
+}
+
+/* GitHub */
+.social-icon.github:hover {
+  color: #333; /* Kolor GitHub */
+}
+
+/* Stylowanie linków w sekcjach */
+.footer-link {
+  color: #333; /* Bazowy kolor tekstu */
+  transition: color 0.3s; /* Animacja zmiany koloru */
+}
+
+.footer-link:hover {
+  color: #007bff; /* Kolor przy najechaniu */
+}
